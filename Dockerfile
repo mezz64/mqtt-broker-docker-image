@@ -15,9 +15,9 @@ RUN add-apt-repository ppa:mosquitto-dev/mosquitto-ppa -y
 RUN apt-get update
 RUN apt-get install -y mosquitto mosquitto-clients
 
-RUN mkdir /mosquitto/config
-RUN mkdir /mosquitto/data
-RUN mkdir /mosquitto/log
+RUN mkdir -p /mosquitto/config
+RUN mkdir -p /mosquitto/data
+RUN mkdir -p /mosquitto/log
 
 # RUN chown -R nobody:users /mosquitto
 
