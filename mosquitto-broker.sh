@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo 'SERVICE: mosquitto broker'
-exec mosquitto -c /etc/mosquitto/mosquitto.conf
+exec mosquitto -c /mosquitto/config/mosquitto.conf
